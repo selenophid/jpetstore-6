@@ -18,7 +18,8 @@
       command: docker tag jenkins-sonar:latest alinabagwan12345/jenkins-sonar:latest 
 
     - name: Log in to Docker Hub
-       docker_login:
+        community.docker.docker_login:
+        registry_url: https://index.docker.io/v1/
           username: alinabagwan12345
           password: Wahid@12345
 
